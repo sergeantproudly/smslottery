@@ -16,43 +16,43 @@
 	<meta name="msapplication-config" content="assets/images/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
     <title>SMS lottery</title>
-    <link rel="stylesheet" href="assets/css/style.css?6">
+    <style>
+        body {background-color: #30003D;}.holder {margin: 0 auto;padding: 0 20px;max-width: 376px;box-sizing: border-box;}h1 {font-weight: 900;font-size: 26px;line-height: 29px;margin-bottom: 14px;color: #ffffff;}p {color: #ffffff;}a {text-decoration: none;color: #ffffff;text-transform: uppercase;display: inline-block;font-weight: 900;outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}.btn {display: block;background-color: #FF2875;}
+    </style>
 </head>
 <body>
-<div class="layout">
- 
-    <header>
-        <div class="holder language-menu">
-            <ul>
-                <li><a class="active" id="rus" href="main-rus.html">Русский</a></li>
-                <li class="line"></li>
-                <li><a id="uzb" href="main-uzb.html">Uzbek</a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="layout">
+        <header>
+            <div class="holder language-menu">
+                <ul>
+                    <li><a class="active" id="rus" href="main-rus.html">Русский</a></li>
+                    <li class="line"></li>
+                    <li><a id="uzb" href="main-uzb.html">Uzbek</a></li>
+                </ul>
+            </div>
+        </header>
 
-    <main>
-        <div class="holder">
-            <h1>Получи новый смартфон Apple или Samsung!</h1>
-            <p>Отправь SMS и ты участник!</p>
-            <ul class="img-phone">
-                <li><a href="#"><img src="assets/images/img-phone1.png" alt="#"></a></li>
-                <li><a href="#"><img src="assets/images/img-phone2.png" alt="#"></a></li>
-            </ul>
-            <button class="btn"><a href="#">Хочу iPhone</a></button>
-            <button class="btn"><a href="#">Хочу Samsung</a></button>
-            <h2>Чем больше SMS ты отправишь тем выше шансы на победу!</h2>
-        </div>
-    </main>
+        <main>
+            <div class="holder">
+                <h1>Получи новый смартфон Apple или Samsung!</h1>
+                <p>Отправь SMS и ты участник!</p>
+                <ul class="img-phone">
+                    <li><a href="/sms?body=I+want+IPHONE+998765365680988"><img src="assets/images/img-phone1.png" alt="#"></a></li>
+                    <li><a href="/sms?body=I+want+SAMSUNG+998765365680988"><img src="assets/images/img-phone2.png" alt="#"></a></li>
+                </ul>
+                <button class="btn"><a href="/sms?body=I+want+IPHONE+998765365680988">Хочу iPhone</a></button>
+                <button class="btn"><a href="/sms?body=I+want+SAMSUNG+998765365680988">Хочу Samsung</a></button>
+                <h2>Чем больше SMS ты отправишь тем выше шансы на победу!</h2>
+            </div>
+        </main>
 
-    <footer>
-        <div class="holder privacy-info">
-            <a href="#">Информация о конфидециальности данных и прочем. Информация о конфидециальности данных и прочем.</a>
-        </div>
-    </footer>
+        <footer>
+            <div class="holder privacy-info">
+                <a href="#">Информация о конфидециальности данных и прочем. Информация о конфидециальности данных и прочем.</a>
+            </div>
+        </footer>
+    </div>  
 
-</div>  
-
-<script src="assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?3">
 </body>
 </html>
