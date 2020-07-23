@@ -25,14 +25,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; manifest-src 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
     <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/images/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
     <title>SMS Contest</title>
     <style>
         body {background-color: #30003D;}.holder {margin: 0 auto;padding: 0 20px;max-width: 376px;box-sizing: border-box;}h1 {font-weight: 900;font-size: 26px;line-height: 29px;margin-bottom: 14px;color: #ffffff;}p {color: #ffffff;}a {text-decoration: none;color: #ffffff;text-transform: uppercase;display: inline-block;font-weight: 900;outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}.btn {display: block;background-color: #FF2875;}
@@ -64,33 +64,27 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="layout">
-        <main>
-            <div class="holder">
-                <h1>Win a new Apple or Samsung smartphone</h1>
-                <p>Send SMS to participate!</p>
-                <ul class="img-phone">
-                    <li><a href="/sms?body=IPHONE" id="get_iphone"><img src="assets/images/img-phone1.png" alt="I WANT AN IPHONE"></a></li>
-                    <li><a href="/sms?body=SAMSUNG" id="get_samsung"><img src="assets/images/img-phone2.png" alt="I WANT A SAMSUNG"></a></li>
-                </ul>
-                <button class="btn"><a id="get_iphone_l" href="/sms?body=IPHONE">I WANT AN IPHONE</a></button>
-                <button class="btn"><a id="get_samsung_l" href="/sms?body=SAMSUNG">I WANT A SAMSUNG</a></button>
-                <h2>THE MORE SMS YOU SEND THE HIGHER ARE YOUR CHANCES OF WINNING!</h2>
-            </div>
-        </main>
+        <div id="back"><a href="/" onclick="history.back();return false;">Back</a></div>
 
-        <div id="bl-winners">
+        <section class="inner rules">
             <div class="holder">
-                <h2>They’ve already won <br>their smartphone!</h2>
+                <h1>Rules</h1>
+                   
+                <h2>How to Win an iPhone or Samsung for Free?</h2>           
+                <p>In order to win you have to take part in our sweepstake by choosing the prize you would like to win and sending the SMS message from your phone.</p>
 
+                <h2>This way we will know who’s phone number is the lucky one</h2>
                 <ul>
-                    <li><img src="assets/images/winner1.png" alt="Max, 32, Budapest" title="Max, 32, Budapest"></li>
-                    <li class="bigger"><img src="assets/images/winner2.png" alt="Miriam, 55, Florida" title="Miriam, 55, Florida"></li>
-                    <li><img src="assets/images/winner3.png" alt="Adriana, 21, San Paulo" title="Adriana, 21, San Paulo"></li>
+                    <li>We will be giving away two prizes each month</li>
+                    <li>We will announce the winners on the 10th of every month</li>
+                    <li>This is an international giveaway</li>
+                    <li>The Winner will be chosen ramdomly</li>
+                    <li>All Winners will get a congratulatory SMS after the giveaway ends</li>
+                    <li>Winners will also be declared on all of our social media (stay connected with us there)</li>
+                    <li>Our Giveaway Page will also be updated with the information about the winners, so don’t miss to keep an eye on us there too.</li>
                 </ul>
-
-                <button class="btn"><a href="/winners.html">read their feedback</a></button>
             </div>
-        </div>
+        </section>
 
         <div id="mn-main" class="holder">
             <div class="wrap">
