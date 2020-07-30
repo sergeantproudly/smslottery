@@ -37,7 +37,7 @@
     <style>
         body {background-color: #30003D;}.holder {margin: 0 auto;padding: 0 20px;max-width: 376px;box-sizing: border-box;}h1 {font-weight: 900;font-size: 26px;line-height: 29px;margin-bottom: 14px;color: #ffffff;}p {color: #ffffff;}a {text-decoration: none;color: #ffffff;text-transform: uppercase;display: inline-block;font-weight: 900;outline: none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}.btn {display: block;background-color: #FF2875;}
     </style>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?1">
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -66,27 +66,54 @@
     <div class="layout">
         <main>
             <div class="holder">
-                <h1>Win a new Apple or Samsung smartphone</h1>
+                <h1>Win a new Apple<sup>&reg;</sup> or Samsung<sup>&reg;</sup> smartphone</h1>
                 <p>Send SMS to participate!</p>
                 <ul class="img-phone">
                     <li><a href="/sms?body=IPHONE" id="get_iphone"><img src="assets/images/img-phone1.png" alt="I WANT AN IPHONE"></a></li>
                     <li><a href="/sms?body=SAMSUNG" id="get_samsung"><img src="assets/images/img-phone2.png" alt="I WANT A SAMSUNG"></a></li>
                 </ul>
-                <button class="btn"><a id="get_iphone_l" href="/sms?body=IPHONE">I WANT AN IPHONE</a></button>
-                <button class="btn"><a id="get_samsung_l" href="/sms?body=SAMSUNG">I WANT A SAMSUNG</a></button>
+
+                <div class="countdown-holder">
+                    <h2>Time left until the end of the drawing</h2>
+                    <div class="countdown" id="countdown"></div>
+                </div>
+
+                <button class="btn"><a id="get_iphone_l" href="/sms?body=IPHONE">I WANT AN IPHONE<sup>&reg;</sup></a></button>
+                <button class="btn"><a id="get_samsung_l" href="/sms?body=SAMSUNG">I WANT A SAMSUNG<sup>&reg;</sup></a></button>
                 <h2>THE MORE SMS YOU SEND THE HIGHER ARE YOUR CHANCES OF WINNING!</h2>
             </div>
         </main>
 
         <div id="bl-winners">
             <div class="holder">
-                <h2>They’ve already won <br>their smartphone!</h2>
+                <h2>2550 people have already signed up with a text message!</h2>
+                <p>This year's winners</p>
 
-                <ul>
-                    <li><img src="assets/images/winner1.png" alt="Max, 32, Budapest" title="Max, 32, Budapest"></li>
-                    <li class="bigger"><img src="assets/images/winner2.png" alt="Miriam, 55, Florida" title="Miriam, 55, Florida"></li>
-                    <li><img src="assets/images/winner3.png" alt="Adriana, 21, San Paulo" title="Adriana, 21, San Paulo"></li>
-                </ul>
+                <div class="tabs">
+                    <ul>
+                        <li><a href="#july">July 2020</a></li>
+                        <li><a href="#june">June 2020</a></li>
+                        <li><a href="#may">May 2020</a></li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <ul id="july">
+                        <li><img src="assets/images/winner1.png" alt="Max, 32, Budapest" title="Max, 32, Budapest">Budapest</li>
+                        <li class="bigger"><img src="assets/images/winner2.png" alt="Miriam, 55, Florida" title="Miriam, 55, Florida">Florida</li>
+                        <li><img src="assets/images/winner3.png" alt="Adriana, 21, San Paulo" title="Adriana, 21, San Paulo">San Paulo</li>
+                    </ul>
+                    <ul id="june">
+                        <li><img src="assets/images/winner4.png" alt="Olivia, 18, Brisbane" title="Olivia, 18, Brisbane">Brisbane</li>
+                        <li class="bigger"><img src="assets/images/winner5.png" alt="Aarnav, 29, Mumbai" title="Aarnav, 29, Mumbai">Mumbai</li>
+                        <li><img src="assets/images/winner6.png" alt="Catalina, 39, Madrid" title="Catalina, 39, Madrid">Madrid</li>
+                    </ul>
+                    <ul id="may">
+                        <li><img src="assets/images/winner7.png" alt="Lola, 29, Berlin" title="Lola, 29, Berlin">Berlin</li>
+                        <li class="bigger"><img src="assets/images/winner8.png" alt="Catherine, 21, Sarajevo" title="Catherine, 21, Sarajevo">Sarajevo</li>
+                        <li><img src="assets/images/winner9.png" alt="Ben, 35, Vancouver" title="Ben, 35, Vancouver">Vancouver</li>
+                    </ul>
+                </div>                
 
                 <button class="btn"><a href="/winners.html">read their feedback</a></button>
             </div>
@@ -95,7 +122,7 @@
         <div id="mn-main" class="holder">
             <div class="wrap">
                 <ul>
-                    <li class="winners"><a href="/winners.html">Winners </a></li>
+                    <li class="winners"><a href="/winners.html">Winners</a></li>
                     <li class="rules"><a href="/rules.html">Prize drawing rules</a></li>
                     <li class="contacts"><a href="/contacts.html">Contacts</a></li>
                 </ul>
@@ -105,8 +132,12 @@
 
         <footer>
             <div class="holder">
-                <div id="copyright">&copy; Telenumbers 2020</div>
+                <div id="copyright">&copy; Telenumbers Holdings Ltd 2020</div>
                 <div id="address">Office 602, 6th floor, Apollo Court, 232 Arch. Makariou III Ave., Limassol, 3030, Cyprus</div>
+            </div>
+            <div class="holder" id="phone">
+                <p>Ask your questions by phone:</p>
+                <a href="tel:+442080897860" class="tel">+44 20 80897860</a>
             </div>
         </footer>
     </div>  
@@ -134,5 +165,7 @@
         false
       );
     </script>
+
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>

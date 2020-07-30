@@ -70,17 +70,21 @@
             <div class="holder">
                 <h1>Contacts</h1>
                 <p>Don’t hesitate to e-mail us your questions:</p>
-                <a href="mailto:info@konkurs.ru" class="mail">hello@tele-numbers.com</a>
+                <a href="mailto:info@konkurs.ru" class="mail">hello@phones4sms.com</a>
 
-                <div class="form">
+                <div class="form" id="feedback-form">
                     <h2>Feedback us</h2>
 
                     <form action="#" method="post">
                         <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <textarea name="text" placeholder="Your question"></textarea>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <textarea name="text" placeholder="Your question" required></textarea>
                         <input type="submit" name="submit" class="btn" value="Send">
                     </form>
+
+                    <div class="success">
+                        <p>We have already received your request and will contact you soon</p>
+                    </div>
                 </div>                
             </div>
         </section>
@@ -88,7 +92,7 @@
         <div id="mn-main" class="holder">
             <div class="wrap">
                 <ul>
-                    <li class="winners"><a href="/winners.html">Winners </a></li>
+                    <li class="winners"><a href="/winners.html">Winners</a></li>
                     <li class="rules"><a href="/rules.html">Prize drawing rules</a></li>
                     <li class="contacts"><a href="/contacts.html">Contacts</a></li>
                 </ul>
@@ -98,34 +102,16 @@
 
         <footer>
             <div class="holder">
-                <div id="copyright">&copy; Telenumbers 2020</div>
+                <div id="copyright">&copy; Telenumbers Holdings Ltd 2020</div>
                 <div id="address">Office 602, 6th floor, Apollo Court, 232 Arch. Makariou III Ave., Limassol, 3030, Cyprus</div>
             </div>
+            <div class="holder" id="phone">
+                <p>Ask your questions by phone:</p>
+                <a href="tel:+442080897860" class="tel">+44 20 80897860</a>
+            </div>
         </footer>
-    </div>  
+    </div>
 
-    <!-- Add Pixel Events to the button's click handler -->
-    <script type="text/javascript">
-      var button = document.getElementById('get_iphone_l');
-      button.addEventListener(
-        'click', 
-        function() { 
-          fbq('trackCustom', 'get_iphone_l');          
-        },
-        false
-      );
-    </script>
-
-    <!-- Add Pixel Events to the button's click handler -->
-    <script type="text/javascript">
-      var button = document.getElementById('get_samsung_l');
-      button.addEventListener(
-        'click', 
-        function() { 
-          fbq('trackCustom', 'get_samsung_l');          
-        },
-        false
-      );
-    </script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>
